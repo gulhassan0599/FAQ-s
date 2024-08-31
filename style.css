@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.section-1{
+    width: 100wh;
+    height: 100vh;
+    background-color: #f1f5f8;
+}
+
+.section-1 .row-1 .column-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .row-1 .column-1 .faq{
+    font-family: "Great Vibes", cursive;
+    margin: 5rem 0 2rem;
+    color: #c19e66;
+    text-align: center;
+}
+
+.section-1 .row-1 .column-1 .faqs-box{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 40px -30px black;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 40rem;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.section-1 .row-1 .column-1 .faqs-box .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.section-1 .row-1 .column-1 .faqs-box .question h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.section-1 .row-1 .column-1 .faqs-box .question .btn .plus,
+.section-1 .row-1 .column-1 .faqs-box .question .btn .minus{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.section-1 .row-1 .column-1 .faqs-box .answer p{
+    padding: 1rem 0.5rem;
+    letter-spacing: 1px;
+    border-top: 1px solid rgb(187, 187, 187);
+    word-spacing: 3px;
+    line-height: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+}
+
+.visibility{
+    display: none;
+}
+
+/* Add responsive design rules */
+@media (max-width: 1024px) {
+    /* Adjust the width of the FAQ boxes for tablets and small desktops */
+    .section-1 .row-1 .column-1 .faqs-box {
+        width: 80%;
+    }
+    
+    /* Adjust the font size for the questions */
+    .section-1 .row-1 .column-1 .faqs-box .question h1 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Further reduce the width of the FAQ boxes for tablets */
+    .section-1 .row-1 .column-1 .faqs-box {
+        width: 90%;
+    }
+    
+    /* Adjust the margin and font size for the FAQ title */
+    .section-1 .row-1 .column-1 .faq {
+        font-size: 1.8rem;
+        margin: 3rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Full width for mobile devices */
+    .section-1 .row-1 .column-1 .faqs-box {
+        width: 100%;
+        padding: 0.8rem;
+    }
+    
+    /* Reduce the font size for better readability on smaller screens */
+    .section-1 .row-1 .column-1 .faq {
+        font-size: 1.6rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    .section-1 .row-1 .column-1 .faqs-box .question h1 {
+        font-size: 1rem;
+    }
+    
+    .section-1 .row-1 .column-1 .faqs-box .answer p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    
+    /* Adjust image size */
+    .section-1 .row-1 .column-1 .faqs-box .question .btn .plus,
+    .section-1 .row-1 .column-1 .faqs-box .question .btn .minus {
+        width: 1.2rem;
+    }
+}
+
